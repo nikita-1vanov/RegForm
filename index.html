@@ -2,47 +2,36 @@
 <html lang="eng">
   <head>
     <meta charset="UTF-8" />
-    <title>RegForm</title>
-    <link rel="stylesheet" type="text/css" href="./style/main.css" />
-    <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
+    <title>Registration Page</title>
+    <link rel="stylesheet" type="text/css" href="style/main.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon.png" />
   </head>
 
   <body>
-    <header>
-        <div class="header__logo-text">Registration</div>
-    </header>
     <main>
       <div class="modal__content">
-        <p>Enter the number of clicks</p>
-        <input
-          type="text"
-          class="modal__input"
-          name="numberInput"
-          placeholder="25"
-          required=""
-          data-ddg-inputtype="unknown"
-        />
+        <p>FirstName:</p>
+        <input class="modal__input" placeholder="Fill firstname" />
+        <p>SureName:</p>
+        <input class="modal__input" placeholder="Fill surename" />
+        <p>Age:</p>
+        <input class="modal__input" placeholder="Fill age" />
+        <p>Email:</p>
+        <input type="text" class="modal__input" placeholder="Fill email" />
         <p class="modal__error-message"></p>
         <div class="modal__button-container">
-          <button onclick="setVisibilitySettingsModal('none')">Cancel</button>
-          <button onclick="changeMaxCountClickLocalStorage()">Save</button>
+          <button onclick="">Registration</button>
         </div>
       </div>
     </main>
-    <footer style="display: flex; justify-content: space-between">
-      <div class="footer__best-result-block">
-        <div>Best result: 0.86</div>
-        <img class="footer__best-result-img" src="./img/basket.png" />
-        <div class="footer__best-result-tooltip">Double click to delete</div>
-      </div>
-
+    <footer>
       <div class="footer__github-block">
         <img class="footer__git-img" src="./img/github.png" />
         <a
           class="footer__github-link"
           href="https://github.com/nikita-1vanov/SpeedClick"
         >
-          1.0.0
+          0.0.1
         </a>
       </div>
     </footer>

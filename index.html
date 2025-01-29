@@ -10,19 +10,25 @@
   <body>
     <main>
       <div class="modal__block">
-        <p>FirstName:</p>
-        <input class="modal__input" placeholder="Fill firstname" />
+        <p>Name:</p>
+        <input id="input_name" class="modal__input" placeholder="Fill Name" />
         <p class="modal__error-message"></p>
-        <p>SureName:</p>
+        <p>Surname:</p>
         <input class="modal__input" placeholder="Fill surename" />
         <p class="modal__error-message"></p>
         <p>Age:</p>
-        <input class="modal__input" placeholder="Fill age" />
+        <input
+          data-testid="input_age"
+          class="modal__input"
+          placeholder="Fill age"
+        />
         <p class="modal__error-message"></p>
         <p>Email:</p>
-        <input type="text" class="modal__input" placeholder="Fill email" />
+        <input class="modal__input" placeholder="Fill email" />
         <p class="modal__error-message"></p>
-        <button class="modal__button onclick=">Registration</button>
+        <button class="modal__button" onclick="addNewUser()">
+          Registration
+        </button>
       </div>
     </main>
     <footer>
@@ -34,5 +40,6 @@
         0.0.1
       </a>
     </footer>
+    <script src="./scripts/main.js" type="module"></script>
   </body>
 </html>

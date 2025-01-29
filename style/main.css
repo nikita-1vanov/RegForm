@@ -16,29 +16,31 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #202940;
+  font-size: 20px;
   font-family: "Lexend Deca", sans-serif;
   color: white;
-  margin: 0px 5%;
+  margin: 0 5%;
   min-height: 100%;
   min-width: 600px;
-  cursor: default;
-  touch-action: manipulation;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 footer {
   display: flex;
   justify-content: right;
   margin: 10px 0 30px 0;
-  font-size: 20px;
-}
-
-.footer__github-block {
-  display: flex;
 }
 
 .footer__git-img {
   height: 25px;
-  padding: 0 10px 0 10px;
+  padding: 0 10px;
 }
 
 .footer__github-link {
@@ -50,48 +52,42 @@ footer {
   color: #9922fb;
 }
 
-.modal__content {
-  background-color: #202940;
-  margin: 15% auto;
+.modal__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 35px 110px;
   border: 3px solid #9922fb;
   border-radius: 5%;
   width: 300px;
-  position: relative;
-  font-size: 20px;
-  height: 100%;
-  text-align: left;
 }
 
-.modal__content p {
-  margin: 30px 0 10px 0;
+.modal__block p {
+  margin: 10px 0 10px 0;
 }
 
-.modal__button-container {
+.modal__button {
   display: flex;
   justify-content: center;
   margin-top: 60px;
-}
-
-.modal__button-container button {
   color: white;
   background-color: #9922fb;
-  border-radius: 5%;
+  border-color: #9922fb;
   padding: 10px 40px;
-  font-size: 28px;
+  font-size: 24px;
+  width: 100%;
 }
 
 .modal__input {
-  padding: 10px;
+  padding: 10px 15px;
   font-size: 18px;
-  width: 100%;
   border-radius: 5px;
 }
 
-.modal__error-message {
+p.modal__error-message {
   font-size: 14px;
   color: red;
-  margin-top: 10px;
+  margin: 10px 0 10px 0;
 }
 
 @media screen and (max-device-width: 500px) {

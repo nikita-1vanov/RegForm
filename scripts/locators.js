@@ -18,4 +18,8 @@ export class Locators {
   get fieldEmailInModal() {
     return new WebElement(document.querySelector("[placeholder='Fill email']"));
   }
+
+  get main() {
+    return new WebElement(document.querySelector("main"));
+  }
 }

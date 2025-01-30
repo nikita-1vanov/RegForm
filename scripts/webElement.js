@@ -10,4 +10,8 @@ export class WebElement {
   set value(text) {
     return (this.locator.value = text);
   }
+
+  appendHTML(elem) {
+    return (this.locator.innerHTML += elem);
+  }
 }

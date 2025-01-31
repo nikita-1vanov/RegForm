@@ -3,6 +3,14 @@ export class WebElement {
     this.locator = locator;
   }
 
+  appendHTML(elem) {
+    return (this.locator.innerHTML += elem);
+  }
+
+  set text(value) {
+    return (this.locator.innerText = value);
+  }
+
   get value() {
     return this.locator.value;
   }
@@ -11,7 +19,7 @@ export class WebElement {
     return (this.locator.value = text);
   }
 
-  appendHTML(elem) {
-    return (this.locator.innerHTML += elem);
+  setStyle(key, value) {
+    this.locator.style[key] = value;
   }
 }

@@ -112,4 +112,12 @@ p.modal__error-message {
   width: 25%;
 }
 
+.status {
+  text-align: center;
+  padding-top: 15px;
+}
 
+.status p {
+  text-align: center;
+  font-size: 24px;
+}

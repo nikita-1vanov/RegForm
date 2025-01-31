@@ -3,7 +3,6 @@ import { app } from "./app.js";
 app.actions.setBaseLocalStorage();
 
 function addNewUser() {
-  app.actions.cleraStatus();
   app.actions.clearValidTextInModalData();
   const userData = app.actions.getUserInfo();
   const countErrors = app.actions.validateUserData(userData);

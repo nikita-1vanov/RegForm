@@ -5,7 +5,6 @@ function renderUserList() {
 
   for (const user of userList) {
     const userLineHTML = app.templates.userTablesLine(user);
-    console.log(userLineHTML);
     app.locators.main.appendHTML(userLineHTML);
   }
 }

@@ -87,17 +87,17 @@ export class Actions {
       errors++;
     }
 
+    if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$/.test(userData.email)) {
+      app.locators.validationEmailText.text = "Invalid email";
+      errors++;
+    }
+
     if (userData.email.length < 5 || userData.email.length > 40) {
       app.locators.validationEmailText.text =
         "The length must between 5 and 40";
       errors++;
     }
-
-    if (!/^[a-zA-Z1-9@.]*$/.test(userData.email)) {
-      app.locators.validationEmailText.text = "Invalid email";
-      errors++;
-    }
-
+  
     if (!Number(userData.age)) {
       app.locators.validationAgeText.text = "Age must me integer";
       errors++;
